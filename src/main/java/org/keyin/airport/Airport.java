@@ -1,8 +1,10 @@
 package org.keyin.airport;
 
+import org.keyin.aircraft.Aircraft;
 import org.keyin.city.City;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -14,6 +16,8 @@ public class Airport {
     private String name;
     private String code;
 
+    @ManyToMany
+    private List<Aircraft> aircraft;
     @OneToOne
     private City city;
 
@@ -47,5 +51,13 @@ public class Airport {
 
     public void setCity(City city) {
         this.city = city;
+    }
+
+    public List<Aircraft> getAircraft() {
+        return aircraft;
+    }
+
+    public void setAircraft(List<Aircraft> aircraft) {
+        this.aircraft = aircraft;
     }
 }
