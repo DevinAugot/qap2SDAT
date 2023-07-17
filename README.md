@@ -14,10 +14,10 @@ Clone this repository to your local machine.
 Open a terminal and navigate to the project directory.
 
 Build the Docker image:
-docker build -t aviation-api .
+docker build -t qap2sdat .
 
 Run the Docker container:
-docker run -p 8080:8080 aviation-api
+docker run -p 8080:8080 qap2sdat
 
 The API should now be accessible at http://localhost:8080.
 
