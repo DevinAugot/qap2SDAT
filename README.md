@@ -19,6 +19,9 @@ docker build -t qap2sdat .
 Run the Docker container:
 docker run -p 8080:8080 qap2sdat
 
+OR alternative way to run through docker desktop is command : docker-compose up
+
+
 The API should now be accessible at http://localhost:8080.
 
 # Testing the API
